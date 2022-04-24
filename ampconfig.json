@@ -1,0 +1,19 @@
+{
+  "dataServiceGeneratorVersion": "0.12.4",
+  "appInfo": {
+    "name": "CourseDB",
+    "description": "Education app",
+    "version": "siunfe6s",
+    "id": "cl1471pco143313101s6fs8kp524",
+    "url": "https://app.amplication.com/cl1471pco143313101s6fs8kp524",
+    "settings": {
+      "dbHost": "localhost",
+      "dbName": "course-db",
+      "dbPassword": "admin",
+      "dbPort": 5432,
+      "dbUser": "admin",
+      "appId": "cl1471pco143313101s6fs8kp524",
+      "authProvider": "Jwt"
+    }
+  }
+}
