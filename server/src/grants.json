@@ -1,0 +1,158 @@
+[
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Partner",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Partner",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Partner",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Partner",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Topic",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Topic",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Topic",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Topic",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Course",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Course",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Course",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Course",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CourseChapter",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "CourseChapter",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CourseChapter",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "CourseChapter",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CourseChapter",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "CourseChapter",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CourseChapter",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "CourseChapter",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CourseChapter",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "CourseChapter",
+    "action": "read:any",
+    "attributes": "*"
+  }
+]

@@ -1,0 +1,71 @@
+datasource postgres {
+  provider = "postgresql"
+  url      = env("POSTGRESQL_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  createdAt DateTime @default(now())
+  firstName String?
+  id        String   @id @default(cuid())
+  lastName  String?
+  password  String
+  roles     String[]
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}
+
+model Partner {
+  courses     Course[]
+  createdAt   DateTime @default(now())
+  description String?
+  id          String   @id @default(cuid())
+  image       String
+  name        String
+  updatedAt   DateTime @updatedAt
+}
+
+model Topic {
+  courses   Course[]
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  image     String
+  name      String   @unique
+  updatedAt DateTime @updatedAt
+}
+
+model Course {
+  content     CourseContent @relation(fields: [contentId], references: [id])
+  contentId   String
+  createdAt   DateTime      @default(now())
+  description String?
+  id          String        @id @default(cuid())
+  image       String
+  name        String
+  partner     Partner       @relation(fields: [partnerId], references: [id])
+  partnerId   String
+  topics      Topic[]
+  updatedAt   DateTime      @updatedAt
+}
+
+model CourseContent {
+  chapters  CourseChapter[]
+  course    Course
+  createdAt DateTime        @default(now())
+  id        String          @id @default(cuid())
+  updatedAt DateTime        @updatedAt
+}
+
+model CourseChapter {
+  coursesContents   CourseContent @relation(fields: [coursesContentsId], references: [id])
+  coursesContentsId String
+  createdAt         DateTime      @default(now())
+  description       String?
+  id                String        @id @default(cuid())
+  name              String
+  text              String
+  updatedAt         DateTime      @updatedAt
+}
